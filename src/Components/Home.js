@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar'
+
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
-import Footer from './Footer';
+
 
 export default function Home() {
     
@@ -61,7 +61,7 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar/>
+     
       <div className='bg-fuchsia-50 p-12'>
         <h1 className='font-bold text-5xl text-fuchsia-900 drop-shadow-md'>Welcome to ImageInfinity</h1>
         <p className='text-xl mt-8 text-fuchsia-800 pl-2'>At <span className='font-semibold ml-2 mr-2 text-2xl'>ImageInfinity</span>, we believe in the power of images to inspire, educate, 
@@ -159,7 +159,7 @@ export default function Home() {
 
         </p> */}
       </div>
-      <Footer/>
+
     </div>
   )
 }

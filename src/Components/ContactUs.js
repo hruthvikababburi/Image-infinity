@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+
 
 const ContactUs = () => {
   const form = useRef();
@@ -11,10 +10,10 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "replace with service id",
-        "replace with template id",
+        "service id",
+        "template id",
         form.current,
-        "replace with user id"
+        "user id"
       )
       .then(
         (result) => {
@@ -29,7 +28,7 @@ const ContactUs = () => {
 
   return (
     <div className="h-lvh">
-        <Navbar/>
+       
         <div className="bg-fuchsia-50 p-12 h-screen">
             <h2 className="text-4xl font-bold mb-4 text-fuchsia-900 ">Contact Us</h2>
             <p className='text-2xl mt-6 text-fuchsia-800 pl-2'>
@@ -59,7 +58,7 @@ const ContactUs = () => {
                 <button type="submit" className="bg-transparent border border-fuchsia-800 hover:bg-fuchsia-900 hover:border-fuchsia-50 hover:text-fuchsia-50 text-fuchsia-800 font-bold py-2 px-4 rounded">Send</button>
             </form>
         </div>
-        <Footer/>
+       
     </div>
   );
 };
