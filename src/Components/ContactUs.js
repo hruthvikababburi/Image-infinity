@@ -28,9 +28,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="h-lvh">
-       
-        <div className="bg-fuchsia-50 p-12 h-screen">
+    <div className="min-h-screen">
+        <div className="bg-fuchsia-50 p-12">
             <h2 className="text-5xl font-bold mb-4 text-fuchsia-900 ">Contact Us</h2>
             <p className='text-2xl mt-6 text-fuchsia-800 pl-2 bg-pink-100 p-5 rounded-lg'>
                 Join our vibrant community of photography enthusiasts and connect with like-minded individuals from around 

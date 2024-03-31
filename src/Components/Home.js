@@ -2,6 +2,7 @@ import React from 'react'
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
+import DisplayItem from './DisplayItem';
 
 
 export default function Home() {
@@ -57,6 +58,137 @@ export default function Home() {
         thumbnail: "https://fastly.picsum.photos/id/81/5000/3250.jpg?hmac=gFiddUc7I25C06HUIMesyaFCjSOWE3L3uDl0QSyuX4M",
     },
    ];
+
+   const natureImages = [
+    {
+        id:'1',
+        url:'https://fastly.picsum.photos/id/374/3888/2592.jpg?hmac=aLgKcbAu5RT1FF8nN-g7ALPS1vb71QEPx6hYqw3ZUNY'
+    },
+    {
+        id:'2',
+        url:'https://fastly.picsum.photos/id/353/5000/2806.jpg?hmac=QvrRaGlMinnGfuGM-yhcEwdMbIM3MXXyo0dC7PqqGc0'
+    },
+    {
+        id:'3',
+        url:'https://fastly.picsum.photos/id/362/4438/2954.jpg?hmac=SaEsgFrZIK1IM_SZgrf-3ySjRErJmLRfKbbTmrL1Gi0'
+    },
+    {
+        id:'4',
+        url:'https://fastly.picsum.photos/id/400/5000/3333.jpg?hmac=XKAazck_prwhbeyjBv4hERt3PeQAn0aX52O92xOXdrM'
+    },
+    {
+        id:'5',
+        url:'https://fastly.picsum.photos/id/412/5000/3337.jpg?hmac=VSZ7GVX_YrRuuXWEg2UwwHA25JGD1ZfrTVJEQezSimg'
+    },
+    {
+        id:'6',
+        url:'https://fastly.picsum.photos/id/459/2310/1534.jpg?hmac=3GuIBHCecDx0ymJJzLe_lGSQDAlbf-PiXYnCc7iM2MI'
+    },
+    {
+        id:'7',
+        url:'https://fastly.picsum.photos/id/479/5000/3125.jpg?hmac=j66BaSs_lceNGSjKSvLiVom-oT-CX7MpkwxjUypWZ08'
+    },
+    {
+        id:'8',
+        url:'https://fastly.picsum.photos/id/537/2291/3450.jpg?hmac=uzL_amhTzSWxkfdcv7Iaq6g6rsmgyiaj6GhbBP18hE8'
+    },
+    {
+        id:'9',
+        url:'https://fastly.picsum.photos/id/559/4288/2848.jpg?hmac=UBJtq93OgcI7jlLRd-kgsM4ayEMD1-PiY38ctRS642I'
+    },
+    {
+        id:'10',
+        url:'https://fastly.picsum.photos/id/564/2000/1333.jpg?hmac=GyOWIiB-_VM3YeERuSH4_UlknZGRd6R0Rge6x0hSbIc'
+    },
+    
+   ]
+   const OtherImages = [
+    {
+        id:'1',
+        url:'https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I'
+    },
+    {
+        id:'2',
+        url:'https://fastly.picsum.photos/id/134/4928/3264.jpg?hmac=IcPmWTNClVqLcr7PpqBrfOAvgmJbqw0Z8jZvmsCrC-c'
+    },
+    {
+        id:'3',
+        url:'https://fastly.picsum.photos/id/188/2896/1936.jpg?hmac=tKGI_u_jJ-s7wzHbJibhbflqi57bIpH9g7FJXnTfJao'
+    },
+    {
+        id:'4',
+        url:'https://fastly.picsum.photos/id/195/768/1024.jpg?hmac=rksrWrgeGQzOdzXlnzsTWy2L2zYq4gQei3TBMWCmXsI'
+    },
+    {
+        id:'5',
+        url:'https://fastly.picsum.photos/id/212/2000/1394.jpg?hmac=5mJ6tJgbGO0Wl1jBHXsiOQQYq-bRf47wLE9vmXjcEuU'
+    },
+    {
+        id:'6',
+        url:'https://fastly.picsum.photos/id/238/2560/1440.jpg?hmac=wKo4dLHwDntZmO_fdtnKtsnmRcPMACca3m5J5vx2AVc'
+    },
+    {
+        id:'7',
+        url:'https://fastly.picsum.photos/id/257/5000/3333.jpg?hmac=B0TMVZJOXC_cBK0gZj5EzCBnCwoBMEyvt9t8AbJDkdA'
+    },
+    {
+        id:'8',
+        url:'https://fastly.picsum.photos/id/299/5000/3288.jpg?hmac=vajPmKo1hPW0RLYeb2h14Ry9Mp5Gw0rs0yc78FmBmdM'
+    },
+    {
+        id:'9',
+        url:'https://fastly.picsum.photos/id/320/2689/1795.jpg?hmac=RbcHvJKkKfsAdlsQWzGT-F31XZcRP-O89MeKyDaeads'
+    },
+    {
+        id:'10',
+        url:'https://fastly.picsum.photos/id/376/5000/3324.jpg?hmac=YsGSzJMjAbs9Y95mgDvjlhJ28wfLdf55oWsN7pOhytY'
+    },
+    
+   ]
+   const FoodImages = [
+    {
+        id:'1',
+        url:'https://w0.peakpx.com/wallpaper/214/646/HD-wallpaper-delicious-food-iteam-spicey-food-tasty-food-yummy-food-food-delicious-food.jpg'
+    },
+    {
+        id:'2',
+        url:'https://i.pinimg.com/originals/bf/65/bb/bf65bb64aa8cc139f454028a9d03f297.jpg'
+    },
+    {
+        id:'3',
+        url:'https://i.pinimg.com/564x/4a/97/33/4a9733376d9c220d0d72ad34674dc5ec.jpg'
+    },
+    {
+        id:'4',
+        url:'https://i.pinimg.com/564x/52/a3/21/52a321e6f9cfcc2b7873eab190e1bea6.jpg'
+    },
+    {
+        id:'5',
+        url:'https://i.pinimg.com/564x/31/9f/59/319f5908f05f1007ca101fc58891260e.jpg'
+    },
+    {
+        id:'6',
+        url:'https://i.pinimg.com/564x/f2/a4/0a/f2a40a4e61fabda517587679a78d5206.jpg'
+    },
+    {
+        id:'7',
+        url:'https://i.pinimg.com/564x/f3/2e/39/f32e395464f6884ee9a158ba37276347.jpg'
+    },
+    {
+        id:'8',
+        url:'https://i.pinimg.com/564x/f7/d5/e3/f7d5e32151a137191c6c2e9000dd5253.jpg'
+    },
+    {
+        id:'9',
+        url:'https://i.pinimg.com/564x/5e/cb/c6/5ecbc688ce65b2eb47e5953d8e6ee578.jpg'
+    },
+    {
+        id:'10',
+        url:'https://i.pinimg.com/564x/c8/51/16/c85116745864aba8116944f362aa5396.jpg'
+    },
+    
+   ]
+   
 
 
   return (
@@ -127,15 +259,31 @@ export default function Home() {
             <ul >
                 <li><span className='font-semibold  mr-2 text-xl'>Nature's Wonders:</span> Lose yourself in the serene beauty of pristine landscapes, 
                     majestic wildlife, and lush botanical gardens.
+                    <div className='flex flex-wrap'>
+                        {natureImages.map((Item)=>{
+                            return(<DisplayItem Item={Item} key={Item.id}/>)
+                        })}
+                    </div>
                 </li>
                 <li><span className='font-semibold  mr-2 text-xl'>Urban Adventures:</span>
                         Experience the energy and excitement of city life through our 
                     dynamic collection of urban scenes, architectural marvels, and candid street photography.
+                    <div className='flex flex-wrap'>
+                        {OtherImages.map((Item)=>{
+                            return(<DisplayItem Item={Item} key={Item.id}/>)
+                        })}
+                    </div>
                 </li>
                 <li><span className='font-semibold mr-2 text-xl'> Culinary Delights:</span>
                     Indulge your senses with our mouthwatering collection of 
                     food photography, featuring tantalizing dishes from around the world that are sure to tickle your taste buds.
+                    <div className='flex flex-wrap'>
+                        {FoodImages.map((Item)=>{
+                            return(<DisplayItem Item={Item} key={Item.id}/>)
+                        })}
+                    </div>
                 </li>
+
             </ul>
         </div>
         
