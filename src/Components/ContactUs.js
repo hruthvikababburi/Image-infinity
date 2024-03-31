@@ -32,7 +32,7 @@ const ContactUs = () => {
        
         <div className="bg-fuchsia-50 p-12 h-screen">
             <h2 className="text-5xl font-bold mb-4 text-fuchsia-900 ">Contact Us</h2>
-            <p className='text-2xl mt-6 text-fuchsia-800 pl-2'>
+            <p className='text-2xl mt-6 text-fuchsia-800 pl-2 bg-pink-100 p-5 rounded-lg'>
                 Join our vibrant community of photography enthusiasts and connect with like-minded individuals from around 
                 the globe. Follow us on social media to stay updated on the latest additions to our gallery, photography tips,
                 and community events. Whether you're seeking inspiration,feedback, or simply a place to share your passion for 
@@ -43,7 +43,7 @@ const ContactUs = () => {
                 fill out the form below, and we'll get back to you as soon as possible. Your feedback is valuable 
                 to us, and we're here to assist you every step of the way. Let's start the conversation!
             </p>
-            <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg md:mt-10">
+            <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg md:mt-10 bg-rose-100 p-5">
                 <div className="mb-4">
                 <label htmlFor="user_name" className="block  text-fuchsia-800 text-lg font-bold mb-2">Name</label>
                 <input type="text" id="user_name" name="user_name" required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />

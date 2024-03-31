@@ -5,7 +5,8 @@ export default function EachResult({image}) {
     <div className="p-3 flex-wrap">
         <img src={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_m.jpg`}
         height={150}
-        alt={image.title}/>
+        alt={image.title} className='rounded-lg'/>
+        
     </div>
   )
 }

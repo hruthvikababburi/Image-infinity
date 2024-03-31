@@ -88,11 +88,9 @@ export default function Home() {
         
         <div className='mt-10 flex items-center' >
             <div className='w-2/4'>
-            
                 <p className='text-5xl text-fuchsia-800 pl-2 '>
                     Experience the wonder of wildlife, the charm of urban landscapes, and the magic of everyday moments in our gallery.
                 </p>
-
             </div>
             <div className=' w-2/4 ml-auto'>
                 <ImageGallery items={images2} thumbnailPosition='bottom' useTranslate3D={true} autoPlay={true} slideOnThumbnailOver={true} swipingTransitionDuration={1} lazyLoad={false} showNav={false} slideInterval={3000} showPlayButton={false} showThumbnails={false} showFullscreenButton={false}/>
