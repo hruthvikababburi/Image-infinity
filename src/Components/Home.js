@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
+import Footer from './Footer';
 
 export default function Home() {
     
@@ -158,6 +159,7 @@ export default function Home() {
 
         </p> */}
       </div>
+      <Footer/>
     </div>
   )
 }
