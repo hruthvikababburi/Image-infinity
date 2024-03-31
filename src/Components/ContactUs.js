@@ -10,15 +10,16 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service id",
-        "template id",
+        "service_12mpvvg",
+        "template_jgx2evc",
         form.current,
-        "user id"
+        "Tl1iXpikVr-TQTxsE"
       )
       .then(
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
