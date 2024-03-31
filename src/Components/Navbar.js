@@ -1,7 +1,28 @@
-import React from 'react'
+// import React from 'react'
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { IoIosSearch } from "react-icons/io";
-export default function Navbar() {
+const apiKey = "636e1481b4f3c446d26b8eb6ebfe7127";
+
+
+export default function Navbar({setData}) {
+  
+  const [search,setSearch] = useState('')
+  const handleChange=(event)=>{
+    setSearch(event.target.value)
+    console.log(search)
+  }
+  const handleSubmit=()=>{
+    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${search}&per_page=24&format=json&nojsoncallback=1`)
+    .then((res)=>{
+        setData(res.data.photos.photo)
+        setSearch('')
+        
+    }).catch((error)=>{
+        console.log(error)
+    })
+  }
   return (
     <nav className='navbar  bg-fuchsia-950 text-white h-auto flex flex-row justify-between items-center p-4 pr-4 pl-4 w-full h-16' style={{ position: 'sticky', top: '0', zIndex: '1000' }}>
         <div className='flex flex-row justify-between items-center '>
@@ -15,8 +36,11 @@ export default function Navbar() {
                 <li className='nav-item'><Link to='/contact'>Contact Us</Link></li>
             </ul>
             <div className='p-2 text-fuchsia-50 w-searchBar bg-transparent flex flex-row justify-between items-center border border-fuchsia-50 rounded-md'>
-                <input type='text' className='outline-none bg-transparent'/>
-                <IoIosSearch color='#fdf4ff' size={20} className='cursor-pointer'/>  
+                <input type='text' className='outline-none bg-transparent' value={search} onChange={handleChange}/>
+                <Link to='searchresults'>
+                    <IoIosSearch color='#fdf4ff' size={20} className='cursor-pointer' onClick={handleSubmit}/>
+                </Link>
+                  
             </div>
         </div>
       </nav>

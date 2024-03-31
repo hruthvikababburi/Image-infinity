@@ -30,7 +30,7 @@ const ContactUs = () => {
     <div className="h-lvh">
        
         <div className="bg-fuchsia-50 p-12 h-screen">
-            <h2 className="text-4xl font-bold mb-4 text-fuchsia-900 ">Contact Us</h2>
+            <h2 className="text-5xl font-bold mb-4 text-fuchsia-900 ">Contact Us</h2>
             <p className='text-2xl mt-6 text-fuchsia-800 pl-2'>
                 Join our vibrant community of photography enthusiasts and connect with like-minded individuals from around 
                 the globe. Follow us on social media to stay updated on the latest additions to our gallery, photography tips,
@@ -53,7 +53,7 @@ const ContactUs = () => {
                 </div>
                 <div className="mb-4">
                 <label htmlFor="message" className="block  text-fuchsia-800 text-lg font-bold mb-2">Message</label>
-                <textarea id="message" name="message" required className="shadow appearance-none border rounded w-full py-9 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                <textarea id="message" name="message" required className="shadow appearance-none border rounded w-full py-8 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
                 </div>
                 <button type="submit" className="bg-transparent border border-fuchsia-800 hover:bg-fuchsia-900 hover:border-fuchsia-50 hover:text-fuchsia-50 text-fuchsia-800 font-bold py-2 px-4 rounded">Send</button>
             </form>

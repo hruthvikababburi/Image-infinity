@@ -122,14 +122,16 @@ export default function Home() {
         <h2  className='font-bold text-3xl text-fuchsia-800 mt-7 drop-shadow-sm'>
             Featured Categories
         </h2>
-        <p className='bg-violet-100 text-xl mt-8 text-fuchsia-700  p-4 pl-2  rounded-lg'>
-            Take a glimpse into some of our featured categories and embark on a visual journey like no other:
+        <div className='bg-violet-100 text-xl mt-8 text-fuchsia-700  p-4 pl-2  rounded-lg'>
+            <p>
+                Take a glimpse into some of our featured categories and embark on a visual journey like no other:
+            </p>
             <ul >
                 <li><span className='font-semibold  mr-2 text-xl'>Nature's Wonders:</span> Lose yourself in the serene beauty of pristine landscapes, 
                     majestic wildlife, and lush botanical gardens.
                 </li>
                 <li><span className='font-semibold  mr-2 text-xl'>Urban Adventures:</span>
-                     Experience the energy and excitement of city life through our 
+                        Experience the energy and excitement of city life through our 
                     dynamic collection of urban scenes, architectural marvels, and candid street photography.
                 </li>
                 <li><span className='font-semibold mr-2 text-xl'> Culinary Delights:</span>
@@ -137,7 +139,8 @@ export default function Home() {
                     food photography, featuring tantalizing dishes from around the world that are sure to tickle your taste buds.
                 </li>
             </ul>
-        </p>
+        </div>
+        
         
         <div className='bg-white w-full p-4 mt-3 md:mt-6 rounded-lg'>
             <h2  className='font-bold text-3xl text-fuchsia-800 drop-shadow-sm'>
